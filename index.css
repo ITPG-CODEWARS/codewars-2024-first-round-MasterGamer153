@@ -1,0 +1,128 @@
+body {
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: auto;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#home {
+    background-color: #fff;
+}
+
+#about {
+    background-color: #fff;
+}
+
+#contact {
+    background-color: #fff;
+}
+
+.course button {
+    background-color: #ffc107;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+    padding-bottom: 100px;
+    height: 600px;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Fade animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; } 
+    to { opacity: 1; }
+}
+
+img {
+    vertical-align: middle;
+}

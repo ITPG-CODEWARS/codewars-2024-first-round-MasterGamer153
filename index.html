@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Template</title>
+</head>
+<body>
+
+    <header>
+        <h1>Trains website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Blog</a></li>
+            <li><a href="#about">Gallery</a></li>
+            <li><a href="#contact">Random</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Useful Links</h2>
+
+    <!----------------------------------------------------------------------------------------------->
+            <div class="course">
+              <div class="course-info">
+                <h3>Our Blog</h3>
+                <p>
+                  Read Our Blog!
+                </p>
+                <button class="cta-button">Our Blog</button>
+              </div>
+            </div>
+      
+            <div class="course">
+              <div class="course-info">
+                <h3>Gallery</h3>
+                <p>
+                  Our Gallery!
+                </p>
+                <button class="cta-button">Gallery</button>
+              </div>
+            </div>
+      
+            <div class="course">
+              <div class="course-info">
+                <h3>Random train website</h3>
+                <p>
+                  Where would it lead you to?
+                </p>
+                <button class="cta-button">I know you want to click it</button>
+              </div>
+            </div>
+    <!----------------------------------------------------------------------------------------------->
+    </section>
+
+    <section id="about">
+        <h2>About me</h2>
+        <p>Hi im Aiden! I just learned how to use html and css!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact me!</h2>
+        <p>If you have any critique, you can shove it up your arse! Thanks in advance!</p>
+    </section>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="train1.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="train2.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="train3.jpg" style="width:100%">
+        </div>
+    
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Aiden Pazhev. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+        </script>
+</body>
+</html>
