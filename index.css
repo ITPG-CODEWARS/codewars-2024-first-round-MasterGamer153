@@ -24,10 +24,33 @@ body::before {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #d3ffd4;
     color: white;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
+}
+
+.logo {
+    margin-right: 15px; /* Adds space between the logo and the text */
+    display: flex;
+    align-items: center; /* Vertically aligns the logo and text */
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 50px; /* Adjusts the logo size, modify as needed */
+    height: auto;
+}
+
+.logo a {
+    text-decoration: none; /* Removes underline from the link */
+    color: inherit; /* Inherits the color from the parent (h3 in this case) */
+    display: flex;
+    align-items: center; /* Keeps image and text aligned */
+}
+
+h3{
+    color: #111;
 }
 
 nav {
