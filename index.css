@@ -100,7 +100,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -206,3 +206,36 @@ img {
     
 }
 /* /Gallery */
+
+/* About me */
+
+.about-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about-text {
+    flex: 1;
+    background-color: #e9ffeb;
+}
+
+.about-text p{
+    font-size: large;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ffeb;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* /About me */
